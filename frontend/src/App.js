@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Linechart from './Component/widget1/Linechart';
+import Barchart from './Component/widget2/Barchart';
+import Piechart from './Component/widget3/Piechart'; 
+import Areachart from './Component/widget4/Areachart'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Linechart></Linechart>
+      <Barchart></Barchart>
+      <Piechart></Piechart>
+      <Areachart></Areachart>
+      <Calendar></Calendar>
     </div>
   );
 }
